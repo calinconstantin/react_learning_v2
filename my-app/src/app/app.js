@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button } from '../button/button.js';
 
 function Square({value, onSquareClick}) {
   return (
@@ -36,6 +37,7 @@ export default function Board() {
 
   return (
     <>
+      <Button />
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />

@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { Button } from '../button/button.js';
+import { Car } from '../car/car.js';
+import { Garage } from '../Garage/Garage.js';
+import { Tile } from '../Tile/Tile.js';
+import { State } from '../State/State.js';
 
 function Square({value, onSquareClick}) {
   return (
@@ -37,6 +41,10 @@ export default function Board() {
 
   return (
     <>
+      <State/>
+      <Tile/>
+      <Garage/>
+      <Car/>
       <Button />
       <div className="status">{status}</div>
       <div className="board-row">

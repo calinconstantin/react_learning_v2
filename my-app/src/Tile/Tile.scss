@@ -1,0 +1,11 @@
+.tile {
+    position: relative;
+    margin: 100px;
+    height: 100px;
+    width: 100px;
+    border: 4px solid green;
+    &:before {
+        bottom:100%;
+        border-bottom: 144.34px solid #CD5C5C;
+    }
+}

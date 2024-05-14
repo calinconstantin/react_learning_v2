@@ -5,7 +5,7 @@ import styles from './Content.scss';
 export function Content() {
     return (
         <>
-            <div className='content'></div>
+            <div className='content container'>Content</div>
         </>
       )
   }

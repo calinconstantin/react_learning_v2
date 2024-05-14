@@ -1,4 +1,18 @@
 .menu {
-    height: 100px;
+    height: 50px;
     background-color: gray;
+    ul {
+        width: 80%;
+        height: inherit;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    a:first-of-type {
+        margin-left: 0px;
+    }
+
 }

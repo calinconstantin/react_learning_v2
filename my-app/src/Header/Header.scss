@@ -1,7 +1,19 @@
 .header {
     border-bottom: 1px solid lightgray;
-    height: 100px;
+    height: 50px;
     background-color: #e7e7e7;
-
-
+    width: 100vw;
+    .image-logo {
+        background-image: url('../Attachments/logos-png-8.png');
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        //border: 1px red solid;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
 }
+

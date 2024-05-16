@@ -1,0 +1,37 @@
+.accountMenu {
+    display: relative;
+    .image {
+        width: 50px;
+        height: 50px;
+        background-image: url('../Attachments/account-image.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .account--content {
+        position: absolute;
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        z-index: 1;
+    }
+
+    .account--content ul {
+        flex-direction: column;
+    }
+    .account--content li {
+        padding: 5px;
+    }
+    .account--content li:hover {
+        text-decoration: underline;
+        
+    }
+
+    .image:hover .account--content {
+        visibility: visible;
+      }
+}

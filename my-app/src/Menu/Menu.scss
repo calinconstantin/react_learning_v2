@@ -3,18 +3,18 @@
     background-color: gray;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    ul {
-        width: 80%;
+    .container ul {
+        margin-right: auto;
         height: inherit;
         list-style-type: none;
         display: flex;
-        align-items: center;
-        margin: 0 auto;
         padding: 0;
     }
 
     a:first-of-type {
         margin-left: 0px;
     }
-
+    .container {
+        display: flex;
+    }
 }

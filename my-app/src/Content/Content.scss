@@ -1,4 +1,6 @@
-.content {
-    height: 800px;
-    background-color: rgb(167, 167, 167);
+.content {   
+    > * {
+        margin-top: 2%;
+        overflow: hidden;
+    }
 }

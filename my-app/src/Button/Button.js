@@ -3,6 +3,6 @@ import styles from "./Button.scss"
 
 export function Button ({btnValue}) {
     return (
-        <a>{btnValue}</a>
+        <a className="btn">{btnValue}</a>
     )
 }

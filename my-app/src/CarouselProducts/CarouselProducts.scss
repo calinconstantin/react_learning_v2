@@ -1,0 +1,22 @@
+.carouselProducts {
+    position: relative;
+    display: flex;
+    width: 10000px;
+    > * {
+        margin: 0 4px;
+    }
+
+    .btn--carousel {
+        position: absolute;
+    }
+    .btn--carousel--left {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+    .btn--carousel--right {
+        left: 77.4vw;
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+}

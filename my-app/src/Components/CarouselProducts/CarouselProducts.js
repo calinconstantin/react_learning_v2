@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CarouselProducts.scss"
-import { ProductTile } from "../ProductTile/ProductTile";
+import {ProductTile} from "../ProductTile/ProductTile";
 
 export function CarouselProducts (products) {
     const data = products.products;

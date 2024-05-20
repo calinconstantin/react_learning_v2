@@ -1,10 +1,12 @@
+@import '../../Utils/variables';
+
 .header {
     border-bottom: 1px solid lightgray;
     height: 50px;
-    background-color: #e7e7e7;
+    background-color: $color1;
     width: 100vw;
     .image-logo {
-        background-image: url('../Attachments/logos-png-8.png');
+        //background-image: url('../Attachments/logos-png-8.png');
         height: 50px;
         background-size: contain;
         background-repeat: no-repeat;

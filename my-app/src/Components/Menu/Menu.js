@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './Menu.scss';
 import { Button } from "../Button/Button.js";
-import { AccountMenu } from "../AccountMenu/AccountMenu.js"
 
 
 export function Menu() {
@@ -17,7 +16,6 @@ export function Menu() {
                     <li><Button btnValue={'BtnMenu5'} /></li>
                     <li><Button btnValue={'BtnMenu6'} /></li>
                 </ul>
-                <AccountMenu />
             </div>
         </div>
     )

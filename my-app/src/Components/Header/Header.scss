@@ -1,21 +1,163 @@
 @import '../../Utils/variables';
 
-.header {
-    border-bottom: 1px solid lightgray;
-    height: 50px;
-    background-color: $color1;
-    width: 100vw;
-    .image-logo {
-        //background-image: url('../Attachments/logos-png-8.png');
-        height: 50px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 50px;
-        //border: 1px red solid;
+#header {
+
+    .header-top-container,
+    .header-middle,
+    .header-bottom {
+        width: 1200px;
+        margin: 0 auto;
     }
-    .container {
+
+    .header-top {
+        background-color: $color1;
+        height: 40px;
+
+        .header-top-container {
+            color: $color4;
+            height: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-top-dropdowns {
+                display: flex;
+                width: 20%;
+            }
+
+            .address {
+                &:hover {
+                    color: $color3;
+                }
+            }
+
+            .header-top-links {
+                text-align: right;
+
+                ul {
+                    display: flex;
+                    list-style-type: none;
+
+                    li {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+
+                    li:first-child {
+                        padding-left: 0px;
+                        padding-right: 20px;
+                    }
+
+                    li:last-child {
+                        padding-left: 20px;
+                        padding-right: 0px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color3;
+                    }
+
+                    &:visited {
+                        color: inherit;
+                    }
+
+                    &:hover:visited {
+                        color: $color3;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-middle {
+        height: 160px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        background-image: url('../../Attachments/home7-logo-15500406263.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .header-middle-icon {
+            padding: 10px 30px;
+            color: $color2;
+        }
+
+        .header-middle-left,
+        .header-middle-right {
+            display: flex;
+            height: 59px;
+            width: 250px;
+            border: 1px solid $color1;
+        }
+    }
+
+    .header-bottom {
+        display: flex;
+        height: 50px;
+        background-color: $color2;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-top-links {
+            text-align: right;
+
+
+            ul {
+                display: flex;
+                list-style-type: none;
+
+                li {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                li:first-child {
+                    padding-left: 0px;
+                    padding-right: 20px;
+                }
+
+                li:last-child {
+                    padding-left: 20px;
+                    padding-right: 0px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $color5;
+
+                &:hover {
+                    color: $color3;
+                }
+
+                &:visited {
+                    color: inherit;
+                }
+
+                &:hover:visited {
+                    color: $color3;
+                }
+            }
+        }
+
+        .header-bottom-inputSearch {
+            margin-right: 15px;
+            width: 250px;
+            position: relative;
+
+            .search-icon {
+                position: absolute;
+                top: 50%;
+                right: 0px; // Adjust this value to position the icon horizontally
+                transform: translateY(-50%);
+                color: $color3; // Adjust color as needed
+                pointer-events: none; // Ensures the icon doesn't block input field interactions
+            }
+        }
     }
 }
-

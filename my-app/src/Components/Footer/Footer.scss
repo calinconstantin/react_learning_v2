@@ -1,59 +1,104 @@
+@import '../../Utils/variables';
+
 .footer {
-    margin-top: 2%;
-    border-top: 1px solid lightgray;
-    height: 300px;
-    background-color: #e7e7e7;
+    background-color: $color6;
+    color: $color1;
+    margin-top: 30px;
 
-    .f1 {
-        height: 80%;
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+    .footer-container {
+        width: 1400px;
+        margin: 0 auto;
         display: flex;
+        color: $color4;
 
-        ul {
-            padding-left: 0;
+        h3,
+        span,
+        .footer-container-col1-icon {
+            color: $color1;
+        }
+
+        h3 {
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(to right, $color2 20%, $color1 20%) 1;
+            margin-right: 5%;
+            padding-bottom: 30px;
         }
 
         li {
-            list-style: none;
-            text-align: center;
-            text-decoration: none;
-            transition: text-decoration 1s;
-            position: relative;
-            padding: 5px;
+            margin-bottom: 10px;
         }
 
-        li a:before {
+        a:hover {
             display: block;
-            background-color: black;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            visibility: hidden;
-            border-radius: 5px;
-            transform: scaleX(0);
-            transition: .25s linear;
+            color: $color1;
+            transform: translateX(10px);
+            transition: transform, 500ms;
         }
 
-        .col {
-            width: 25%;
+        .footer-container-arrowleft {
+            margin-right: 10px;
+        }
+
+        .footer-container-heart {
+            margin-right: 5px;
+        }
+
+        .footer-container-col1 {
+            flex: 0 0 30%;
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+
+            .footer-container-col1-icon {
+                padding: 5px;
+                border: 1px solid $color4;
+                margin-right: 10px;
+            }
+        }
+
+        .footer-container-col2 {
+            flex: 0 0 17.3%;
+        }
+
+        .footer-container-col3 {
+            flex: 0 0 17.3%;
+        }
+
+        .footer-container-col4 {
+            flex: 0 0 17.3%;
+        }
+
+        .footer-container-col5 {
+            flex: 0 0 20%;
         }
     }
 
-    .f2 {
-        height: 20%;
-        position: relative;
-        background-color: gray;
-        position: bottom;
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
+    .footer-bottom {
+        background-color: $color7;
+        height: 50px;
+        .footer-bottom-container {
+            width: 1200px;
+            margin: 0 auto;
+            color: $color4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer-bottom-container-icon {
+                width: 30px;
+                height: 30px;
+                padding: 10px;
+                &:hover {
+                    color: $color2;
+                }
+            }
+        }
 
-    span {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
     }
 }

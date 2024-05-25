@@ -13,8 +13,8 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="*" element={<NoPage} />
       </Route>
+      <Route path="*" element={<NoPage />} />
     </Routes>
   </BrowserRouter>
 );

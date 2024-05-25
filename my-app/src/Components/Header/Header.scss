@@ -1,4 +1,4 @@
-@import '../../Utils/variables';
+@import '../../constants/variables';
 
 #header {
 
@@ -78,7 +78,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-image: url('../../Attachments/home7-logo-15500406263.png');
+        background-image: url('../../assets/home7-logo-15500406263.png');
         background-repeat: no-repeat;
         background-position: center;
 

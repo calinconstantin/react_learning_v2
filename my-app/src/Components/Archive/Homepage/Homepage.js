@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from './Homepage.scss';
-import { Header } from '../Header/Header';
-import { Content } from '../Archive/Content/Content.js';
-import { Footer } from '../Footer/Footer.tsx';
+import { Header } from '../../Header/Header';
+import { Content } from '../Content/Content.js';
+import { Footer } from '../../Footer/Footer';
 
 export function Homepage() {
   return (

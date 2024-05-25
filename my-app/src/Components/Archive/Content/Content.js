@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Content.scss';
-import { Carousel } from "../Carousel/Carousel.js";
-import { CarouselProducts } from "../CarouselProducts/CarouselProducts.js";
+import { Carousel } from "../../Carousel/Carousel.js";
+import { CarouselProducts } from "../../CarouselProducts/CarouselProducts.js";
 
 
 export function Content() {

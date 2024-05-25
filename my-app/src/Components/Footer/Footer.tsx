@@ -1,7 +1,7 @@
 import React from "react";
 import './Footer.scss';
-import { FOOTER, FOOTER_2 } from '../../Utils/constants'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { data } from "../../constants/constants";
 
 
 export function Footer() {
@@ -10,158 +10,79 @@ export function Footer() {
             <div className='footer'>
                 <div className="footer-container">
                     <div className="footer-container-col1">
-                        <h3>{FOOTER.col1.header}</h3>
+                        <h3>{data.FOOTER.col1.header}</h3>
                         <div className="gradient-line"></div>
                         <ul>
-                            <li>
-                                <FontAwesomeIcon size="1x" icon={FOOTER.col1.icon1} className="footer-container-col1-icon" />
-                                <div>
-                                    <span>{FOOTER.col1.addressField}</span>
-                                    {FOOTER.col1.addressValue}
-                                </div>
-                            </li>
-                            <li>
-                                <FontAwesomeIcon size="1x" icon={FOOTER.col1.icon2} className="footer-container-col1-icon" />
-                                <div>
-                                    <span>{FOOTER.col1.emailField}</span>
-                                    {FOOTER.col1.emailValue}
-                                </div>
-                            </li>
-                            <li>
-                                <FontAwesomeIcon size="1x" icon={FOOTER.col1.icon3} className="footer-container-col1-icon" />
-                                <div>
-                                    <span>{FOOTER.col1.telephoneField}</span>
-                                    {FOOTER.col1.telephoneValue}
-                                    <br></br>
-                                    <span>{FOOTER.col1.faxField}</span>
-                                    {FOOTER.col1.faxValue}
-                                </div>
-                            </li>
+                            {data.FOOTER.col1.elements.map((elem, index) => (
+                                <li key={index}>
+                                    <FontAwesomeIcon size="1x" icon={elem.icon} className="footer-container-col1-icon" />
+                                    <div>
+                                        <span>{elem.subTitle}</span>
+                                        {elem.text}
+                                        {elem.subTitle2 ? <span><br></br>{elem.subTitle2}</span> : <></>}
+                                        {elem.text2 ? elem.text2 : <></>}
+                                    </div>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="footer-container-col2">
-                        <h3>{FOOTER.col2.header}</h3>
+                        <h3>{data.FOOTER.col2.header}</h3>
                         <ul>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col2.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col2.valu1}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col2.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col2.value2}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col2.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col2.value3}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col2.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col2.value4}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col2.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col2.value5}
-                                </a>
-                            </li>
+                            {data.FOOTER.col2.values.map((value, index) => (
+                                <li key={index}>
+                                    <a>
+                                        <FontAwesomeIcon icon={data.FOOTER.col2.icon} className="footer-container-arrowleft" />
+                                        {value}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div className="footer-container-col3">
-                        <h3>{FOOTER.col3.header}</h3>
+                        <h3>{data.FOOTER.col3.header}</h3>
                         <ul>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col3.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col3.valu1}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col3.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col3.value2}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col3.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col3.value3}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col3.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col3.value4}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col3.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col3.value5}
-                                </a>
-                            </li>
+                            {data.FOOTER.col3.values.map((value, index) => (
+                                <li key={index}>
+                                    <a>
+                                        <FontAwesomeIcon icon={data.FOOTER.col3.icon} className="footer-container-arrowleft" />
+                                        {value}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="footer-container-col4">
-                        <h3>{FOOTER.col4.header}</h3>
+                    <h3>{data.FOOTER.col4.header}</h3>
                         <ul>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col4.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col4.valu1}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col4.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col4.value2}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col4.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col4.value3}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col4.icon} className="footer-container-arrowleft"/>
-                                    {FOOTER.col4.value4}
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    <FontAwesomeIcon icon={FOOTER.col4.icon} className="footer-container-arrowleft"/>
-                                    <FontAwesomeIcon icon={FOOTER.col4.value5Icon} className="footer-container-heart"/>
-                                    {FOOTER.col4.value5}
-                                </a>
-                            </li>
+                            {data.FOOTER.col4.values.map((value, index) => (
+                                <li key={index}>
+                                    <a>
+                                        <FontAwesomeIcon icon={data.FOOTER.col4.icon} className="footer-container-arrowleft" />
+                                        {value.icon ? <FontAwesomeIcon icon={value.icon} className="footer-container-arrowleft" /> : <></>}
+                                        {value.text}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="footer-container-col5">
-                        <h3>{FOOTER.col5.header}</h3>
+                        <h3>{data.FOOTER.col5.header}</h3>
                         <ul>
                             <li>
                                 <a>
-                                    {FOOTER.col5.header}
+                                    {data.FOOTER.col5.header}
                                 </a>
                             </li>
                             <li>
                                 <a>
-                                    {FOOTER.col5.placeholderValue}
+                                    {data.FOOTER.col5.placeholderValue}
                                 </a>
                             </li>
                             <li>
                                 <a>
-                                    {FOOTER.col5.btnValue}
+                                    {data.FOOTER.col5.btnValue}
                                 </a>
                             </li>
                         </ul>
@@ -169,11 +90,11 @@ export function Footer() {
                 </div>
                 <div className="footer-bottom">
                     <div className="footer-bottom-container">
-                        <span>{FOOTER_2.text}</span>
+                        <span>{data.FOOTER.bottomText}</span>
                         <div className="footer-bottom-container-icons">
-                        {FOOTER_2.icons.map((icon) => (
-                            <FontAwesomeIcon icon={icon} className="footer-bottom-container-icon"/>
-                        ))}
+                            {data.FOOTER.bottomIcon.map((icon) => (
+                                <FontAwesomeIcon icon={icon} className="footer-bottom-container-icon" />
+                            ))}
                         </div>
                     </div>
                 </div>

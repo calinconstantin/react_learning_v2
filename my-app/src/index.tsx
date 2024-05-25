@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home/Home';
 import { Layout } from './pages/Layout/Layout';
+import { NoPage } from './pages/NoPage/NoPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="*" element={<NoPage} />
       </Route>
     </Routes>
   </BrowserRouter>

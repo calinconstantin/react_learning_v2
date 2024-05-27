@@ -54,7 +54,7 @@ export function Footer() {
                         </ul>
                     </div>
                     <div className="footer-container-col4">
-                    <h3>{data.FOOTER.col4.header}</h3>
+                        <h3>{data.FOOTER.col4.header}</h3>
                         <ul>
                             {data.FOOTER.col4.values.map((value, index) => (
                                 <li key={index}>
@@ -92,8 +92,8 @@ export function Footer() {
                     <div className="footer-bottom-container">
                         <span>{data.FOOTER.bottomText}</span>
                         <div className="footer-bottom-container-icons">
-                            {data.FOOTER.bottomIcon.map((icon) => (
-                                <FontAwesomeIcon icon={icon} className="footer-bottom-container-icon" />
+                            {data.FOOTER.bottomIcon.map((icon, index) => (
+                                <FontAwesomeIcon key={index} icon={icon} className="footer-bottom-container-icon" />
                             ))}
                         </div>
                     </div>

@@ -11,7 +11,7 @@ export function Carousel() {
     return (
         <div className="carousel">
             <div className="btn--carousel">
-            <button onClick={() => activate(0)}>1</button>
+                <button onClick={() => activate(0)}>1</button>
                 <button onClick={() => activate(1)}>2</button>
                 <button onClick={() => activate(2)}>3</button>
                 <button onClick={() => activate(3)}>4</button>

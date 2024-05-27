@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './ProductTile.scss'
-import { Button } from "../Button/Button.js";
+import { Button } from "../Button/Button";
 
 export function ProductTile({ product }) {
 

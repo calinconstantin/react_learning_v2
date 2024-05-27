@@ -38,7 +38,7 @@ export const Dropdown: React.FC<Props> = ({ arrayElements }) => {
         <div className="dropdown" ref={dropdownRef}>
             <div className={`dropdown-title ${isOpen ? `open` : ``}`} onClick={toggleDropDown}>
                 {selectedTitle}
-                <FontAwesomeIcon icon={faAngleDown} style={{marginLeft: '5px'}} />
+                <FontAwesomeIcon icon={faAngleDown} style={{ marginLeft: '5px' }} />
             </div>
             {isOpen ? (
                 <div className="dropdown-content">

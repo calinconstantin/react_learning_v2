@@ -70,3 +70,33 @@ export const Component3 = () => {
         </>
     )
 }
+
+
+
+const valueContext = createContext<string>('');
+
+
+export const Component4 = () => {
+    const [value, setValue] = useState('0');
+    const refValue = useRef(0);
+
+    useEffect(() => {
+        console.warn('hello');
+        console.warn(refValue.current);
+    }, [])
+
+
+    return (
+        <valueContext.Provider value={value}>
+            Component4
+            <Component5 />
+        </valueContext.Provider>
+    )
+}
+
+export const Component5 = () => {
+    const value = useContext(valueContext);
+    return (
+        <>Component5 {value}</>
+    )
+}

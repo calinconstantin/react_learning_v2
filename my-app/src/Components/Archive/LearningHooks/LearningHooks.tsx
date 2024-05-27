@@ -97,6 +97,18 @@ export const Component4 = () => {
 export const Component5 = () => {
     const value = useContext(valueContext);
     return (
-        <>Component5 {value}</>
+        <>
+            Component5 {value}
+            <Component6 Props='fasdf' />
+        </>
+
     )
+}
+
+type MyProps = {
+    Props: string;
+}
+
+export const Component6 = ({ Props }: MyProps) => {
+    return (<></>)
 }
